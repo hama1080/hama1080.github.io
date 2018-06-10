@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <TopBar></TopBar>
     <router-view/>
   </div>
 </template>
 
 <script>
+import TopBar from '@/components/TopBar'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    TopBar
+  }
 }
 </script>
 
@@ -17,6 +22,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
