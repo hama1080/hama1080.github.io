@@ -27,7 +27,7 @@ export default {
 <style scoped>
 div#menu {
   width:500px;
-  margin: 0px auto;
+  margin: 0 auto 30px auto;
 }
 .el-menu-item{
   height: 40px;
