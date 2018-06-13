@@ -1,7 +1,7 @@
 <template>
   <div id="menu">
     <el-menu :default-active="activeIndex" mode="horizontal" class="top-bar" router="true" @select="handleSelect">
-      <el-menu-item index="1">Profile</el-menu-item>
+      <el-menu-item index="1">About</el-menu-item>
       <el-menu-item index="2">Works</el-menu-item>
       <el-menu-item index="3">Photographs</el-menu-item>
     </el-menu>

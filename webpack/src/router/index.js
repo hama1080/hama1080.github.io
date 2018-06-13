@@ -3,7 +3,7 @@ import ElementUI from 'element-ui'
 import locale from 'element-ui/lib/locale/lang/ja'
 import 'element-ui/lib/theme-chalk/index.css'
 import Router from 'vue-router'
-import Profile from '@/components/Profile'
+import About from '@/components/About'
 import Works from '@/components/Works'
 import Photographs from '@/components/Photographs'
 
@@ -15,12 +15,12 @@ export default new Router({
     {
       path: '/',
       name: 'Profile',
-      component: Profile
+      component: About
     },
     {
       path: '/1',
       name: 'Profile',
-      component: Profile
+      component: About
     },
     {
       path: '/2',
