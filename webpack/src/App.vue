@@ -1,7 +1,9 @@
 <template>
-  <div id="app" style="width: 1024px; margin: auto;">
-    <TopBar></TopBar>
-    <router-view/>
+  <div style=" height: 100vh; background-color: #f5f2ed;">
+    <div id="app" style="width: 1024px; margin: 0 auto; background-color: #f5f2ed;">
+      <TopBar></TopBar>
+      <router-view/>
+    </div>
   </div>
 </template>
 
