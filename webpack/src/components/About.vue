@@ -3,7 +3,7 @@
     <el-row>
       <el-col :span="24">
         <img src="../assets/profile_picture.jpg" style="width: 20%;"/>
-        <h1>hmhm903</h1>
+        <h1>hama903</h1>
         <h2>Software engineer with the knowledge of hardware.</h2>
       </el-col>
     </el-row>
