@@ -14,8 +14,10 @@
           <div class="sub-title">Skills</div>
         </el-col>
         <el-col :span="16" align="left">
-          <div class="skill">C++</div>
+          <div class="skill">C/C++</div>
           <div class="skill">Python</div>
+          <div class="skill">PhysX</div>
+          <div class="skill">Electronics</div>
         </el-col>
       </el-col>
     </el-row>
@@ -26,8 +28,18 @@
           <div class="sub-title">Social</div>
         </el-col>
         <el-col :span="16" align="left">
-          <div class="social">Github</div>
-          <div class="social">Twitter</div>
+          <div class="social">
+            <custom-icon name="github" base-class="custom-icon"></custom-icon>
+            Github
+          </div>
+          <div class="social">
+            <custom-icon name="twitter" base-class="custom-icon"></custom-icon>
+            Twitter
+          </div>
+          <div class="social">
+            <custom-icon name="instagram" base-class="custom-icon"></custom-icon>
+            Instagram
+          </div>
         </el-col>
       </el-col>
     </el-row>
@@ -42,8 +54,13 @@
 </template>
 
 <script>
+import customIcon from 'vue-icon/lib/vue-feather.esm.js'
+
 export default {
   name: 'Profile',
+  components: {
+    customIcon
+  },
   data () {
     return {
     }
@@ -55,13 +72,18 @@ export default {
 <style scoped>
 .sub-title{
   font-size: 150%;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .skill, .social{
   float: left;
-  font-size: 150%;
+  font-size: 120%;
   margin-right: 20px;
-  padding: 10px 0;
+  padding: 20px 0;
+}
+
+.v-icon,
+.custom-icon {
+  width: 24px;
 }
 </style>
