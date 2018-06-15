@@ -26,11 +26,11 @@ export default {
           year: 2018,
           details: [
             {
-              name: '2018Work0',
+              name: 'ポートフォリオサイト',
               img_src: '/static/logo.png'
             },
             {
-              name: '2018Work1',
+              name: 'ひらがなGAN',
               img_src: '/static/logo.png'
             }
           ]
@@ -39,18 +39,71 @@ export default {
           year: 2017,
           details: [
             {
-              name: '2017Work0',
+              name: 'ビットコイン価格表示装置',
               img_src: '/static/logo.png'
             },
             {
-              name: '2017Work1',
-              img_src: '/static/logo.png'
-            },
-            {
-              name: '2017Work2',
+              name: 'HexMan2',
               img_src: '/static/logo.png'
             }
-
+          ]
+        },
+        {
+          year: 2016,
+          details: [
+            {
+              name: 'HexMan',
+              img_src: '/static/logo.png'
+            }
+          ]
+        },
+        {
+          year: 2014,
+          details: [
+            {
+              name: 'タイマーレリーズ',
+              img_src: '/static/logo.png'
+            }
+          ]
+        },
+        {
+          year: 2014,
+          details: [
+            {
+              name: 'Raspberry Pi Server',
+              img_src: '/static/logo.png'
+            }
+          ]
+        },
+        {
+          year: 2013,
+          details: [
+            {
+              name: '7セグデジタル時計',
+              img_src: '/static/logo.png'
+            }
+          ]
+        },
+        {
+          year: 2012,
+          details: [
+            {
+              name: '4bit CPU',
+              img_src: '/static/logo.png'
+            },
+            {
+              name: 'メディアアートファイルビューワ',
+              img_src: '/static/logo.png'
+            }
+          ]
+        },
+        {
+          year: 2012,
+          details: [
+            {
+              name: 'リバーシ',
+              img_src: '/static/logo.png'
+            }
           ]
         }
       ]
