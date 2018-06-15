@@ -2,7 +2,7 @@
   <div>
     <el-row>
       <el-col :span="24">
-        <img src="../assets/profile_picture2.jpg" style="width: 20%;"/>
+        <img src="../assets/profile_picture3.png" style="width: 20%;"/>
         <h1>@hama903</h1>
         <h2>Software engineer with the knowledge of hardware.</h2>
       </el-col>
