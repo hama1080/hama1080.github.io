@@ -1,9 +1,10 @@
 <template>
   <div id="menu">
-    <el-menu :default-active="activeIndex" mode="horizontal" class="top-bar" router="true" @select="handleSelect">
+    <el-menu :default-active="activeIndex" mode="horizontal" class="top-bar" router="true" @select="handleSelect"
+             background-color="#f5f2ed" text-color="#333" active-text-color="#ff6347">
       <el-menu-item index="1">About</el-menu-item>
       <el-menu-item index="2">Works</el-menu-item>
-      <el-menu-item index="3">Photographs</el-menu-item>
+      <el-menu-item index="3">Photos</el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -26,12 +27,14 @@ export default {
 
 <style scoped>
 div#menu {
-  width:500px;
+  width:270px;
   margin: 0 auto 30px auto;
 }
 .el-menu-item{
-  height: 40px;
-  line-height: 40px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
   font-size: 100%;
+  text-align: center;
 }
 </style>
