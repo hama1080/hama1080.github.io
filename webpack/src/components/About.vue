@@ -8,17 +8,13 @@
       </el-col>
     </el-row>
 
-    <el-row gutter="20" id="skills">
+    <el-row id="skills">
       <el-col :span="24">
-        <el-col :span="8" align="right">
-          <div class="sub-title">Skills:</div>
-        </el-col>
-        <el-col :span="16" align="left">
-          <div class="skill">C/C++</div>
-          <div class="skill">Python</div>
-          <div class="skill">PhysX</div>
-          <div class="skill">Electronics</div>
-        </el-col>
+        <span class="skill">Skills:</span>
+        <span class="skill">C/C++</span>
+        <span class="skill">Python</span>
+        <span class="skill">PhysX</span>
+        <span class="skill">Electronics</span>
       </el-col>
     </el-row>
 
@@ -50,22 +46,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.sub-title{
-  font-size: 120%;
+#skills{
+  margin: 20px 0;
+}
+#social{
+  margin: 40px 0;
 }
 
 .skill{
-  float: left;
   font-size: 120%;
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
-#social{
-  margin: 50px 0;
-}
 .v-icon,
 .custom-icon {
-  width: 28px;
+  width: 30px;
   margin: 0 10px;
 }
 
