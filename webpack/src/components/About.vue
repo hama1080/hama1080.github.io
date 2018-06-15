@@ -68,4 +68,10 @@ export default {
   width: 28px;
   margin: 0 10px;
 }
+
+a:link { color: #333; }
+a:visited { color: #333; }
+a:hover { color: #ff6347; }
+a:active { color: #ff6347; }
+
 </style>
