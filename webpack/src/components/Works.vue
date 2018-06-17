@@ -1,18 +1,14 @@
 <template>
   <div>
 
-    <div v-for="(work, index) in works_history" :key="index">
-      <h2>{{ work.year }}</h2>
-      <el-row>
-        <el-col :span="6" v-for="(o, index) in work.details" :key="index" :offset="(index % 3) === 0 ? 1 : 2" >
-          <el-card>
-            <img v-bind:src="o.img_src"/>
-            {{ o.name }}
-          </el-card>
-        </el-col>
-      </el-row>
+    <div v-for="(work, index) in works" :key="index">
+      <el-card :body-style="{ padding: '0px' }" class="work-card">
+        <img v-bind:src="work.img_src"/>
+        <div>{{ work.date }}</div>
+        <div>{{ work.name }}</div>
+      </el-card>
     </div>
-
+ 
   </div>
 </template>
 
@@ -21,90 +17,61 @@ export default {
   name: 'Works',
   data () {
     return {
-      works_history: [
+      works: [
         {
-          year: 2018,
-          details: [
-            {
-              name: 'ポートフォリオサイト',
-              img_src: '/static/logo.png'
-            },
-            {
-              name: 'ひらがなGAN',
-              img_src: '/static/logo.png'
-            }
-          ]
+          date: '2018/6',
+          name: 'ポートフォリオサイト',
+          img_src: '/static/logo.png'
         },
         {
-          year: 2017,
-          details: [
-            {
-              name: 'ビットコイン価格表示装置',
-              img_src: '/static/logo.png'
-            },
-            {
-              name: 'HexMan2',
-              img_src: '/static/logo.png'
-            }
-          ]
+          date: '2018/3',
+          name: 'ひらがなGAN',
+          img_src: '/static/logo.png'
         },
         {
-          year: 2016,
-          details: [
-            {
-              name: 'HexMan',
-              img_src: '/static/logo.png'
-            }
-          ]
+          date: '2017/10',
+          name: 'ビットコイン価格表示装置',
+          img_src: '/static/logo.png'
         },
         {
-          year: 2014,
-          details: [
-            {
-              name: 'タイマーレリーズ',
-              img_src: '/static/logo.png'
-            }
-          ]
+          date: '2017/3',
+          name: 'HexMan2',
+          img_src: '/static/logo.png'
         },
         {
-          year: 2014,
-          details: [
-            {
-              name: 'Raspberry Pi Server',
-              img_src: '/static/logo.png'
-            }
-          ]
+          date: '2016/3',
+          name: 'HexMan',
+          img_src: '/static/logo.png'
         },
         {
-          year: 2013,
-          details: [
-            {
-              name: '7セグデジタル時計',
-              img_src: '/static/logo.png'
-            }
-          ]
+          date: '2014/12',
+          name: 'Raspberry Pi Server',
+          img_src: '/static/logo.png'
         },
         {
-          year: 2012,
-          details: [
-            {
-              name: '4bit CPU',
-              img_src: '/static/logo.png'
-            },
-            {
-              name: 'メディアアートファイルビューワ',
-              img_src: '/static/logo.png'
-            }
-          ]
+          date: '2014/7',
+          name: 'タイマーレリーズ',
+          img_src: '/static/logo.png'
         },
         {
-          year: 2012,
-          details: [
-            {
-              name: 'リバーシ',
-              img_src: '/static/logo.png'
-            }
-          ]
+          date: '2013',
+          name: '7セグデジタル時計',
+          img_src: '/static/logo.png'
+        },
+        {
+          date: '2012',
+          name: '4bit CPU',
+          img_src: '/static/logo.png'
+        },
+        {
+          date: '2012',
+          name: 'ファイルビューワメディアアート',
+          img_src: '/static/logo.png'
+        },
+        {
+          date: '2011',
+          name: 'リバーシ',
+          img_src: '/static/logo.png'
         }
       ]
     }
@@ -114,5 +81,9 @@ export default {
 </script>
 
 <style scoped>
-
+.work-card{
+  width: 250px;
+  margin: 30px;
+  float: left;
+}
 </style>
