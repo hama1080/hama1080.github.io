@@ -2,9 +2,9 @@
   <div id="menu">
     <el-menu :default-active="activeIndex" mode="horizontal" class="top-bar" router="true" @select="handleSelect"
              background-color="#f5f2ed" text-color="#333" active-text-color="#ff6347">
-      <el-menu-item index="1">About</el-menu-item>
-      <el-menu-item index="2">Works</el-menu-item>
-      <el-menu-item index="3">Photos</el-menu-item>
+      <el-menu-item index="/">About</el-menu-item>
+      <el-menu-item index="/Works">Works</el-menu-item>
+      <el-menu-item index="/Photos">Photos</el-menu-item>
     </el-menu>
   </div>
 </template>

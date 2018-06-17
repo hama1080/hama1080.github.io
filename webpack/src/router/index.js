@@ -7,6 +7,7 @@ import feather from 'vue-icon'
 import About from '@/components/About'
 import Works from '@/components/Works'
 import Photographs from '@/components/Photographs'
+import Portfolio from '@/components/work/portfolio'
 
 Vue.use(Router)
 Vue.use(ElementUI, {locale})
@@ -16,23 +17,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Profile',
+      name: 'About',
       component: About
     },
     {
-      path: '/1',
-      name: 'Profile',
-      component: About
-    },
-    {
-      path: '/2',
+      path: '/Works',
       name: 'Works',
       component: Works
     },
     {
-      path: '/3',
-      name: 'Photographs',
+      path: '/Photos',
+      name: 'Photos',
       component: Photographs
+    },
+    {
+      path: '/work/portfolio',
+      name: 'Portfolio',
+      component: Portfolio
     }
   ]
 })
