@@ -4,8 +4,10 @@
     <div v-for="(work, index) in works" :key="index">
       <el-card :body-style="{ padding: '0px' }" class="work-card">
         <img v-bind:src="work.img_src"/>
-        <div>{{ work.date }}</div>
-        <div>{{ work.name }}</div>
+        <div class="card-text">
+          <div class="work-title">{{ work.name }}</div>
+          <div class="work-date"><custom-icon name="calendar" base-class="custom-icon"></custom-icon>{{ work.date }}</div>
+        </div>
       </el-card>
     </div>
 
@@ -13,8 +15,13 @@
 </template>
 
 <script>
+import customIcon from 'vue-icon/lib/vue-feather.esm.js'
+
 export default {
   name: 'Works',
+  components: {
+    customIcon
+  },
   data () {
     return {
       works: [
@@ -30,7 +37,7 @@ export default {
         },
         {
           date: '2017/10',
-          name: 'ビットコイン価格表示装置',
+          name: 'Bitcoin Price Checker',
           img_src: '/static/logo.png'
         },
         {
@@ -65,7 +72,7 @@ export default {
         },
         {
           date: '2012',
-          name: 'ファイルビューワメディアアート',
+          name: 'File Viewer',
           img_src: '/static/logo.png'
         },
         {
@@ -83,7 +90,25 @@ export default {
 <style scoped>
 .work-card{
   width: 250px;
+  height: 280px;
   margin: 30px;
   float: left;
+}
+
+.card-text{
+  padding: 20px;
+}
+.work-title{
+  font-size: 120%;
+  font-weight: bold;
+}
+.v-icon,
+.custom-icon {
+  width: 14px;
+  margin: 4px 4px 0 0;
+}
+.work-date{
+  text-align: right;
+  color: #AAA;
 }
 </style>
