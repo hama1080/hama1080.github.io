@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(work, index) in works" :key="index" v-on:click="handleClick(index)">
+    <div v-for="(work, index) in works" :key="index">
       <router-link v-bind:to="work.detail_path">
         <el-card :body-style="{ padding: '0px' }" class="work-card">
           <img v-bind:src="work.img_src"/>
