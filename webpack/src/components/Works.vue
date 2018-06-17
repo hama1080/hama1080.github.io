@@ -8,7 +8,7 @@
         <div>{{ work.name }}</div>
       </el-card>
     </div>
- 
+
   </div>
 </template>
 
