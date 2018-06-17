@@ -1,32 +1,33 @@
 <template>
-  <div>
-    <el-row>
-      <el-col :span="24">
-        <img src="../assets/profile_picture3.png" style="width: 20%;"/>
-        <h1>@hama903</h1>
-        <h2>Software engineer with the knowledge of hardware.</h2>
-      </el-col>
-    </el-row>
+  <transition name="body" appear>
+    <div v-show="show">
+      <el-row>
+        <el-col :span="24">
+          <img src="../assets/profile_picture3.png" style="width: 20%;"/>
+          <h1>@hama903</h1>
+          <h2>Software engineer with the knowledge of hardware.</h2>
+        </el-col>
+      </el-row>
 
-    <el-row id="skills">
-      <el-col :span="24">
-        <span class="skill">Skills:</span>
-        <span class="skill">C/C++</span>
-        <span class="skill">Python</span>
-        <span class="skill">PhysX</span>
-        <span class="skill">Electronics</span>
-      </el-col>
-    </el-row>
+      <el-row id="skills">
+        <el-col :span="24">
+          <span class="skill">Skills:</span>
+          <span class="skill">C/C++</span>
+          <span class="skill">Python</span>
+          <span class="skill">PhysX</span>
+          <span class="skill">Electronics</span>
+        </el-col>
+      </el-row>
 
-    <el-row id="social">
-      <el-col :span="24">
-        <a href="https://github.com/hama903"><custom-icon name="github" base-class="custom-icon"></custom-icon></a>
-        <a href="https://twitter.com/hama903"><custom-icon name="twitter" base-class="custom-icon"></custom-icon></a>
-        <a href="https://www.instagram.com/hama903_/"><custom-icon name="instagram" base-class="custom-icon"></custom-icon></a>
-      </el-col>
-    </el-row>
-
-  </div>
+      <el-row id="social">
+        <el-col :span="24">
+          <a href="https://github.com/hama903"><custom-icon name="github" base-class="custom-icon"></custom-icon></a>
+          <a href="https://twitter.com/hama903"><custom-icon name="twitter" base-class="custom-icon"></custom-icon></a>
+          <a href="https://www.instagram.com/hama903_/"><custom-icon name="instagram" base-class="custom-icon"></custom-icon></a>
+        </el-col>
+      </el-row>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -39,6 +40,7 @@ export default {
   },
   data () {
     return {
+      show: true
     }
   }
 }
@@ -69,4 +71,12 @@ a:visited { color: #333; }
 a:hover { color: #ff6347; }
 a:active { color: #ff6347; }
 
+/* transition */
+.body-enter-active, .body-leave-active{
+  transition: opacity 1s;
+}
+
+.body-enter, .body-leave-to{
+  opacity: 0;
+}
 </style>
