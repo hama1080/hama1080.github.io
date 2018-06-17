@@ -6,7 +6,7 @@ import Router from 'vue-router'
 import feather from 'vue-icon'
 import About from '@/components/About'
 import Works from '@/components/Works'
-import Photographs from '@/components/Photographs'
+import Photos from '@/components/Photos'
 import Portfolio from '@/components/work/portfolio'
 
 Vue.use(Router)
@@ -28,7 +28,7 @@ export default new Router({
     {
       path: '/Photos',
       name: 'Photos',
-      component: Photographs
+      component: Photos
     },
     {
       path: '/work/portfolio',
