@@ -1,11 +1,11 @@
 <template>
   <div>
     <el-row>
-      <el-col span="20" offset="2">
+      <el-col :span="20" :offset="2">
 
         <el-card>
           <el-row>
-            <el-col span="24">
+            <el-col :span="24">
               <h2>Portfolio(2018/6)</h2>
 
               <div>Vue.jsを利用したポートフォリオサイト</div>
@@ -19,7 +19,17 @@
                 <span class="tech">Vue.js</span>
               </div>
 
-              <div><custom-icon name="github" base-class="custom-icon"></custom-icon>Source(Github)</div>
+              <el-row>
+                <el-col :offset="18" :span="6">
+                  <a href="https://github.com/hama903/hama903.github.io">
+                    <el-button plain class="source-link">
+                      <custom-icon name="github" base-class="custom-icon"></custom-icon>
+                      <div class="source-text">Source</div>
+                    </el-button>
+                  </a>
+                </el-col>
+              </el-row>
+
             </el-col>
           </el-row>
 
@@ -42,9 +52,16 @@ export default {
 </script>
 
 <style scoped>
+
+.source-link{
+  font-size: 120%;
+  padding: 5px 10px;
+  margin: 15px;
+}
+
 .v-icon,
 .custom-icon {
-  width: 24px;
+  width: 20px;
 }
 
 .tech{
