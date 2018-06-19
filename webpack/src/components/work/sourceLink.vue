@@ -1,7 +1,7 @@
 <template>
   <el-row>
     <el-col :offset="18" :span="6">
-      <a :href="sourcePath">
+      <a :href="address">
         <el-button plain class="link-button">
           <custom-icon name="github" base-class="custom-icon"></custom-icon>
           <div class="source-text">Source</div>
@@ -19,11 +19,7 @@ export default{
   components: {
     customIcon
   },
-  data () {
-    return {
-      sourcePath: 'https://github.com/hama903/hama903.github.io'
-    }
-  }
+  props: ['address']
 }
 </script>
 
