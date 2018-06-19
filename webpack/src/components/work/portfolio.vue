@@ -6,12 +6,17 @@
         <el-card>
           <el-row>
             <el-col :span="24">
-              <h2>Portfolio(2018/6)</h2>
+              <h2>Portfolio</h2>
+              <h3>2018/6</h3>
 
-              <div>Vue.jsを利用したポートフォリオサイト</div>
+              <div>
+                Vue.jsを利用したポートフォリオサイト
+              </div>
 
               <!--Screen shots-->
-              <div></div>
+              <div>
+                <img src="../../assets/works/portfolio/screenshot.png">
+              </div>
 
               <div>
                 <span class="tech">Technologies:</span>
