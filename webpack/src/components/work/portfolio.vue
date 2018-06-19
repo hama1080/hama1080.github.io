@@ -19,16 +19,7 @@
                 <span class="tech">Vue.js</span>
               </div>
 
-              <el-row>
-                <el-col :offset="18" :span="6">
-                  <a href="https://github.com/hama903/hama903.github.io">
-                    <el-button plain class="source-link">
-                      <custom-icon name="github" base-class="custom-icon"></custom-icon>
-                      <div class="source-text">Source</div>
-                    </el-button>
-                  </a>
-                </el-col>
-              </el-row>
+              <sourceLink></sourceLink>
 
             </el-col>
           </el-row>
@@ -41,28 +32,17 @@
 </template>
 
 <script>
-import customIcon from 'vue-icon/lib/vue-feather.esm.js'
+import sourceLink from './sourceLink.vue'
 
 export default {
   name: 'portfolio',
   components: {
-    customIcon
+    sourceLink
   }
 }
 </script>
 
 <style scoped>
-
-.source-link{
-  font-size: 120%;
-  padding: 5px 10px;
-  margin: 15px;
-}
-
-.v-icon,
-.custom-icon {
-  width: 20px;
-}
 
 .tech{
   margin: 0 5px;

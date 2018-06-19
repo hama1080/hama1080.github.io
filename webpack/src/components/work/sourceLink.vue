@@ -1,0 +1,41 @@
+<template>
+  <el-row>
+    <el-col :offset="18" :span="6">
+      <a :href="sourcePath">
+        <el-button plain class="link-button">
+          <custom-icon name="github" base-class="custom-icon"></custom-icon>
+          <div class="source-text">Source</div>
+        </el-button>
+      </a>
+    </el-col>
+  </el-row>
+</template>
+
+<script>
+import customIcon from 'vue-icon/lib/vue-feather.esm.js'
+
+export default{
+  name: 'sourcelink',
+  components: {
+    customIcon
+  },
+  data () {
+    return {
+      sourcePath: 'https://github.com/hama903/hama903.github.io'
+    }
+  }
+}
+</script>
+
+<style scoped>
+.link-button{
+  font-size: 120%;
+  padding: 5px 10px;
+  margin: 15px;
+}
+
+.v-icon,
+.custom-icon {
+  width: 20px;
+}
+</style>
