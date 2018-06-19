@@ -9,21 +9,26 @@
               <h2>Portfolio</h2>
               <h3>2018/6</h3>
 
+              <!-- Description -->
               <div>
                 Vue.jsを利用したポートフォリオサイト
               </div>
 
-              <!--Screen shots-->
-              <div>
-                <img src="../../assets/works/portfolio/screenshot.png">
-              </div>
+              <!-- Screen shots -->
+              <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
+                <el-carousel-item>
+                  <img src="../../assets/works/portfolio/screenshot.png">
+                </el-carousel-item>
+              </el-carousel>
 
+              <!-- Technologies -->
               <div>
                 <span class="tech">Technologies:</span>
                 <span class="tech">HTML/CSS</span>
                 <span class="tech">Vue.js</span>
               </div>
 
+              <!-- Source link -->
               <sourceLink address="https://github.com/hama903/hama903.github.io"></sourceLink>
 
             </el-col>
