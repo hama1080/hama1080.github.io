@@ -29,7 +29,7 @@ export default {
         {
           date: '2018/6',
           name: 'ポートフォリオサイト',
-          img_src: '/static/logo.png',
+          img_src: '/static/works/portfolio/eyecatch.png',
           detail_path: 'work/portfolio'
         },
         {
@@ -104,6 +104,7 @@ export default {
   width: 250px;
   height: 280px;
   margin: 30px;
+  padding-top: 20px;
   float: left;
 }
 
