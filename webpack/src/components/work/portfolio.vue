@@ -17,7 +17,7 @@
               <!-- Screen shots -->
               <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
                 <el-carousel-item>
-                  <img src="../../assets/works/portfolio/screenshot.png">
+                  <img src="/static/works/portfolio/screenshot.png">
                 </el-carousel-item>
               </el-carousel>
 
