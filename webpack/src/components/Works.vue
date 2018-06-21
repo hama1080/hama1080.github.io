@@ -35,7 +35,7 @@ export default {
         {
           date: '2018/3',
           name: 'ひらがなGAN',
-          img_src: '/static/logo.png',
+          img_src: '/static/works/hiraganaGAN/eyecatch.png',
           detail_path: 'work/hiraganaGAN'
         },
         {
