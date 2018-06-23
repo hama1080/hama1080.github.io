@@ -9,6 +9,7 @@ import Works from '@/components/Works'
 import Photos from '@/components/Photos'
 import Portfolio from '@/components/work/portfolio'
 import hiraganaGAN from '@/components/work/hiraganaGAN'
+import bitcoinPriceChecker from '@/components/work/bitcoinPriceChecker'
 
 Vue.use(Router)
 Vue.use(ElementUI, {locale})
@@ -40,7 +41,11 @@ export default new Router({
       path: '/work/hiraganaGAN',
       name: 'hiraganaGAN',
       component: hiraganaGAN
+    },
+    {
+      path: '/work/bitcoinPriceChecker',
+      name: 'bitcoinPriceChecker',
+      component: bitcoinPriceChecker
     }
-
   ]
 })

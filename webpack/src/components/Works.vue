@@ -42,7 +42,7 @@ export default {
           date: '2017/10',
           name: 'Bitcoin Price Checker',
           img_src: '/static/works/bitcoinPriceChecker/eyecatch.png',
-          detail_path: 'work/portfolio'
+          detail_path: 'work/bitcoinPriceChecker'
         },
         {
           date: '2017/3',
