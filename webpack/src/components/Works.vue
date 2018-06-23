@@ -48,7 +48,7 @@ export default {
           date: '2017/3',
           name: 'HexMan2',
           img_src: '/static/logo.png',
-          detail_path: 'work/portfolio'
+          detail_path: 'work/hexMan2'
         },
         {
           date: '2016/3',
