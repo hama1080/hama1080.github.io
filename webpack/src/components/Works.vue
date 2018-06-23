@@ -56,12 +56,12 @@ export default {
           img_src: '/static/works/hexMan/eyecatch.png',
           detail_path: 'work/hexMan'
         },
-        {
-          date: '2014/7',
-          name: 'タイマーレリーズ',
-          img_src: '/static/logo.png',
-          detail_path: 'work/timerRelease'
-        },
+        // {
+        //   date: '2014/7',
+        //   name: 'タイマーレリーズ',
+        //   img_src: '/static/logo.png',
+        //   detail_path: 'work/timerRelease'
+        // },
         {
           date: '2013',
           name: '7セグデジタル時計',
