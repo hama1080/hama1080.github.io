@@ -77,8 +77,8 @@ export default {
         {
           date: '2012',
           name: 'File Viewer',
-          img_src: '/static/logo.png',
-          detail_path: 'work/portfolio'
+          img_src: '/static/works/fileViewer/eyecatch.png',
+          detail_path: 'work/fileViewer'
         },
         {
           date: '2011',

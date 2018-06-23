@@ -15,6 +15,7 @@ import hexMan2 from '@/components/work/hexMan2'
 import hexMan from '@/components/work/hexMan'
 import digitalClock from '@/components/work/digitalClock'
 import handMadeCPU from '@/components/work/handMadeCPU'
+import fileViewer from '@/components/work/fileViewer'
 
 Vue.use(Router)
 Vue.use(ElementUI, {locale})
@@ -71,6 +72,12 @@ export default new Router({
       path: '/work/handMadeCPU',
       name: 'handMadeCPU',
       component: handMadeCPU
+    },
+    {
+      path: '/work/fileViewer',
+      name: 'fileViewer',
+      component: fileViewer
     }
+
   ]
 })
