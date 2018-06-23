@@ -54,13 +54,7 @@ export default {
           date: '2016/3',
           name: 'HexMan',
           img_src: '/static/logo.png',
-          detail_path: 'work/portfolio'
-        },
-        {
-          date: '2014/12',
-          name: 'Raspberry Pi Server',
-          img_src: '/static/logo.png',
-          detail_path: 'work/portfolio'
+          detail_path: 'work/hexMan'
         },
         {
           date: '2014/7',
