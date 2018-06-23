@@ -16,6 +16,7 @@ import hexMan from '@/components/work/hexMan'
 import digitalClock from '@/components/work/digitalClock'
 import handMadeCPU from '@/components/work/handMadeCPU'
 import fileViewer from '@/components/work/fileViewer'
+import reversi from '@/components/work/reversi'
 
 Vue.use(Router)
 Vue.use(ElementUI, {locale})
@@ -77,7 +78,11 @@ export default new Router({
       path: '/work/fileViewer',
       name: 'fileViewer',
       component: fileViewer
+    },
+    {
+      path: '/work/reversi',
+      name: 'reversi',
+      component: reversi
     }
-
   ]
 })

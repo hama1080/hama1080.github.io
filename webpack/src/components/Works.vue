@@ -83,8 +83,8 @@ export default {
         {
           date: '2011',
           name: 'リバーシ',
-          img_src: '/static/logo.png',
-          detail_path: 'work/portfolio'
+          img_src: '/static/works/reversi/eyecatch.png',
+          detail_path: 'work/reversi'
         }
       ]
     }
