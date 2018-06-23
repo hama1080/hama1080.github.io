@@ -53,7 +53,7 @@ export default {
         {
           date: '2016/3',
           name: 'HexMan',
-          img_src: '/static/logo.png',
+          img_src: '/static/works/hexMan/eyecatch.png',
           detail_path: 'work/hexMan'
         },
         {

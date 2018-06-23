@@ -11,13 +11,13 @@
 
               <!-- Description -->
               <div>
-                HexMan
+                Unreal Engine 4を利用して作成した2人対戦用ゲーム
               </div>
 
               <!-- Screen shots -->
-              <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
+              <el-carousel height="450px" trigger="click" indicator-position="outside" :autoplay=false>
                 <el-carousel-item>
-                  <img src="/static/works/bitcoinPriceChecker/appearance.png">
+                  <img src="/static/works/hexMan/playing.png">
                 </el-carousel-item>
               </el-carousel>
 
