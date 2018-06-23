@@ -70,9 +70,9 @@ export default {
         },
         {
           date: '2012',
-          name: '4bit CPU',
+          name: 'Hand Made CPU(TD4)',
           img_src: '/static/logo.png',
-          detail_path: 'work/portfolio'
+          detail_path: 'work/handMadeCPU'
         },
         {
           date: '2012',
