@@ -1,18 +1,19 @@
 <template>
-  <div>
-    <div v-for="(work, index) in works" :key="index">
-      <router-link v-bind:to="work.detail_path">
-        <el-card :body-style="{ padding: '0px' }" class="work-card">
-          <img v-bind:src="work.img_src"/>
-          <div class="card-text">
-            <div class="work-title">{{ work.name }}</div>
-            <div class="work-date"><custom-icon name="calendar" base-class="custom-icon"></custom-icon>{{ work.date }}</div>
-          </div>
-        </el-card>
-      </router-link>
+  <transition name="body" appear>
+    <div>
+      <div v-for="(work, index) in works" :key="index">
+        <router-link v-bind:to="work.detail_path">
+          <el-card :body-style="{ padding: '0px' }" class="work-card">
+            <img v-bind:src="work.img_src"/>
+            <div class="card-text">
+              <div class="work-title">{{ work.name }}</div>
+              <div class="work-date"><custom-icon name="calendar" base-class="custom-icon"></custom-icon>{{ work.date }}</div>
+            </div>
+          </el-card>
+        </router-link>
+      </div>
     </div>
-
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -129,5 +130,18 @@ export default {
 .work-date{
   text-align: right;
   color: #AAA;
+}
+
+/* transition */
+.body-enter-active{
+  transition: opacity 1s;
+}
+
+.body-leave-active{
+  transition: opacity 0s;
+}
+
+.body-enter, .body-leave-to{
+  opacity: 0;
 }
 </style>

@@ -72,8 +72,12 @@ a:hover { color: #ff6347; }
 a:active { color: #ff6347; }
 
 /* transition */
-.body-enter-active, .body-leave-active{
+.body-enter-active{
   transition: opacity 1s;
+}
+
+.body-leave-active{
+  transition: opacity 0s;
 }
 
 .body-enter, .body-leave-to{
