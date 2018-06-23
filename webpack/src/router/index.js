@@ -13,6 +13,7 @@ import hiraganaGAN from '@/components/work/hiraganaGAN'
 import bitcoinPriceChecker from '@/components/work/bitcoinPriceChecker'
 import hexMan2 from '@/components/work/hexMan2'
 import hexMan from '@/components/work/hexMan'
+import timerRelease from '@/components/work/timerRelease'
 
 Vue.use(Router)
 Vue.use(ElementUI, {locale})
@@ -60,6 +61,10 @@ export default new Router({
       name: 'hexMan',
       component: hexMan
     },
+    {
+      path: '/work/timerRelease',
+      name: 'timerRelease',
+      component: timerRelease
     }
   ]
 })
