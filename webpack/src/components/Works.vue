@@ -45,6 +45,12 @@ export default {
           detail_path: 'work/bitcoinPriceChecker'
         },
         {
+          date: '2017/8',
+          name: '我が家の茜ちゃんPJ',
+          img_src: '/static/works/wagayakane/eyecatch.png',
+          detail_path: 'work/wagayakane'
+        },
+        {
           date: '2017/3',
           name: 'HexMan2',
           img_src: '/static/works/hexMan2/eyecatch.png',

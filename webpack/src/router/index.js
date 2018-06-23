@@ -11,6 +11,7 @@ import Photos from '@/components/Photos'
 import Portfolio from '@/components/work/portfolio'
 import hiraganaGAN from '@/components/work/hiraganaGAN'
 import bitcoinPriceChecker from '@/components/work/bitcoinPriceChecker'
+import wagayakane from '@/components/work/wagayakane'
 import hexMan2 from '@/components/work/hexMan2'
 import forecastBoard from '@/components/work/forecastBoard'
 import hexMan from '@/components/work/hexMan'
@@ -54,6 +55,11 @@ export default new Router({
       path: '/work/bitcoinPriceChecker',
       name: 'bitcoinPriceChecker',
       component: bitcoinPriceChecker
+    },
+    {
+      path: '/work/wagayakane',
+      name: 'wagayakane',
+      component: wagayakane
     },
     {
       path: '/work/hexMan2',
