@@ -51,6 +51,12 @@ export default {
           detail_path: 'work/hexMan2'
         },
         {
+          date: '2016/11',
+          name: 'お天気掲示板',
+          img_src: '/static/works/forecastBoard/eyecatch.jpg',
+          detail_path: 'work/forecastBoard'
+        },
+        {
           date: '2016/3',
           name: 'HexMan',
           img_src: '/static/works/hexMan/eyecatch.png',

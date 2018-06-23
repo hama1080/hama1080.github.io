@@ -12,6 +12,7 @@ import Portfolio from '@/components/work/portfolio'
 import hiraganaGAN from '@/components/work/hiraganaGAN'
 import bitcoinPriceChecker from '@/components/work/bitcoinPriceChecker'
 import hexMan2 from '@/components/work/hexMan2'
+import forecastBoard from '@/components/work/forecastBoard'
 import hexMan from '@/components/work/hexMan'
 import digitalClock from '@/components/work/digitalClock'
 import handMadeCPU from '@/components/work/handMadeCPU'
@@ -58,6 +59,11 @@ export default new Router({
       path: '/work/hexMan2',
       name: 'hexMan2',
       component: hexMan2
+    },
+    {
+      path: '/work/forecastBoard',
+      name: 'forecastBoard',
+      component: forecastBoard
     },
     {
       path: '/work/hexMan',
