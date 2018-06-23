@@ -13,6 +13,7 @@ import hiraganaGAN from '@/components/work/hiraganaGAN'
 import bitcoinPriceChecker from '@/components/work/bitcoinPriceChecker'
 import hexMan2 from '@/components/work/hexMan2'
 import hexMan from '@/components/work/hexMan'
+import digitalClock from '@/components/work/digitalClock'
 
 Vue.use(Router)
 Vue.use(ElementUI, {locale})
@@ -59,6 +60,12 @@ export default new Router({
       path: '/work/hexMan',
       name: 'hexMan',
       component: hexMan
+    },
+    {
+      path: '/work/digitalClock',
+      name: 'digitalClock',
+      component: digitalClock
     }
+
   ]
 })

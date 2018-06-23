@@ -66,7 +66,7 @@ export default {
           date: '2013',
           name: '7セグデジタル時計',
           img_src: '/static/logo.png',
-          detail_path: 'work/portfolio'
+          detail_path: 'work/digitalClock'
         },
         {
           date: '2012',
