@@ -6,18 +6,22 @@
         <el-card>
           <el-row>
             <el-col :span="24">
-              <h2>4bitCPU(TD4)</h2>
+              <h2>Hand Made CPU(TD4)</h2>
               <h3>2012</h3>
 
               <!-- Description -->
               <div>
-                
+                "CPUの創り方"に記載の4bit CPUを模倣して作成したCPU．<br>
+                ディップスイッチで自由にプログラムを書き換え可能で，3分のラーメンタイマーを実行できる．
               </div>
 
               <!-- Screen shots -->
               <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
                 <el-carousel-item>
-                  <img src="">
+                  <img src="/static/works/handMadeCPU/figure0.jpg">
+                </el-carousel-item>
+                <el-carousel-item>
+                  <img src="/static/works/handMadeCPU/figure1.jpg">
                 </el-carousel-item>
               </el-carousel>
 

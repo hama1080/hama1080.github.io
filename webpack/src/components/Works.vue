@@ -71,7 +71,7 @@ export default {
         {
           date: '2012',
           name: 'Hand Made CPU(TD4)',
-          img_src: '/static/logo.png',
+          img_src: '/static/works/handMadeCPU/eyecatch.jpg',
           detail_path: 'work/handMadeCPU'
         },
         {

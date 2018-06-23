@@ -72,7 +72,5 @@ export default new Router({
       name: 'handMadeCPU',
       component: handMadeCPU
     }
-
-
   ]
 })
