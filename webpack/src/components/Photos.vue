@@ -4,7 +4,7 @@
       <el-row>
         <el-col :span="24">
           <el-card class="photo-card">
-            <img src="/static/photos/poonhill.jpg">
+            <img src="/static/photos/poonhill.jpg" class="photo">
             <dev class="photo-detail">Poon Hill, Nepal</dev>
           </el-card>
         </el-col>
@@ -13,12 +13,12 @@
       <el-row>
         <el-col :span="10" :offset="1">
           <el-card class="photo-card">
-            <img src="/static/photos/drop0.jpg">
+            <img src="/static/photos/drop0.jpg" class="photo">
           </el-card>
         </el-col>
         <el-col :span="10" :offset="2">
           <el-card class="photo-card">
-            <img src="/static/photos/drop1.jpg">
+            <img src="/static/photos/drop1.jpg" class="photo">
           </el-card>
         </el-col>
       </el-row>
@@ -26,7 +26,7 @@
       <el-row>
         <el-col :span="24">
           <el-card class="photo-card">
-            <img src="/static/photos/hokuryu.jpg">
+            <img src="/static/photos/hokuryu.jpg" class="photo">
             <dev class="photo-detail">Hokuryu, Hokkaido, Japan</dev>
           </el-card>
         </el-col>
@@ -35,7 +35,7 @@
       <el-row>
         <el-col :span="24">
           <el-card class="photo-card">
-            <img src="/static/photos/biei.jpg">
+            <img src="/static/photos/biei.jpg" class="photo">
             <dev class="photo-detail">Biei, Hokkaido, Japan</dev>
           </el-card>
         </el-col>
@@ -44,7 +44,7 @@
       <el-row>
         <el-col :span="24">
           <el-card class="photo-card">
-            <img src="/static/photos/abashiri.jpg">
+            <img src="/static/photos/abashiri.jpg" class="photo">
             <dev class="photo-detail">Abashiri, Hokkaido, Japan</dev>
           </el-card>
         </el-col>
@@ -53,7 +53,7 @@
       <el-row>
         <el-col :span="24">
           <el-card class="photo-card">
-            <img src="/static/photos/varanasi.jpg">
+            <img src="/static/photos/varanasi.jpg" class="photo">
             <dev class="photo-detail">Varanasi, India</dev>
           </el-card>
         </el-col>
@@ -82,7 +82,11 @@ export default {
 
 <style scoped>
 .photo-card{
-  margin: 20px 0;
+  margin: 20px 5px;
+}
+
+.photo{
+  width: 100%;
 }
 
 .photo-detail{
