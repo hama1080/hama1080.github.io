@@ -10,13 +10,11 @@
               <h3>2018/6</h3>
 
               <div class="description">
-                Vue.jsを利用したポートフォリオサイト．<br>
-                UIライブラリとしてElement UIを利用．<br>
-                これまでに作ったものや，撮影した写真を掲載．<br>
+                    Vue.jsを利用したポートフォリオサイト．UIライブラリとしてElement UIを利用．これまでに作ったものや，撮影した写真を掲載．
               </div>
 
               <div class="screen-shots">
-                <img src="/static/works/portfolio/figure0.png">
+                <img src="/static/works/portfolio/figure0.png" style="max-width: 100%">
               </div>
 
               <div class="technologies">
@@ -54,6 +52,9 @@ export default {
   margin: 0 0 50px 0;
 }
 
+.description{
+  text-align: left;
+}
 .description, .screen-shots, .description{
   margin: 30px 0;
 }
