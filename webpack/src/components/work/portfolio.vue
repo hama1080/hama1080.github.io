@@ -10,7 +10,11 @@
               <h3>2018/6</h3>
 
               <div class="description">
+                <el-row>
+                  <el-col :md="{span: 16, offset: 4}">
                     Vue.jsを利用したポートフォリオサイト．UIライブラリとしてElement UIを利用．これまでに作ったものや，撮影した写真を掲載．
+                  </el-col>
+                </el-row>
               </div>
 
               <div class="screen-shots">
