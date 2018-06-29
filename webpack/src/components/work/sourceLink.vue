@@ -1,6 +1,6 @@
 <template>
   <el-row>
-    <el-col :offset="18" :span="6">
+    <el-col :offset="18" :span="6" :xs="{span: 10, offset: 14}">
       <a :href="address">
         <el-button plain class="link-button">
           <custom-icon name="github" base-class="custom-icon"></custom-icon>
