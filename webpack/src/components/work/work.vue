@@ -38,7 +38,7 @@
                 </span>
               </div>
 
-              <sourceLink v-bind:address=sourceAddress></sourceLink>
+              <sourceLink v-if="sourceAddress!=''" v-bind:address=sourceAddress></sourceLink>
 
             </el-col>
           </el-row>
