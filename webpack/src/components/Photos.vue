@@ -11,12 +11,12 @@
       </el-row>
 
       <el-row>
-        <el-col :span="10" :offset="1">
+        <el-col :span="10" :offset="1" :xs="{span: 24, offset: 0}">
           <el-card class="photo-card">
             <img src="/static/photos/drop0.jpg" class="photo">
           </el-card>
         </el-col>
-        <el-col :span="10" :offset="2">
+        <el-col :span="10" :offset="2" :xs="{span: 24, offset: 0}">
           <el-card class="photo-card">
             <img src="/static/photos/drop1.jpg" class="photo">
           </el-card>
