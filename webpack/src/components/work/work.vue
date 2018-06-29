@@ -18,7 +18,17 @@
               </div>
 
               <div class = "screen-shots">
-                <img  v-for="(path, index) in screenShots" :key="index" v-bind:src=path style="max-width: 100%">
+                <div v-if="screenShots.length == 0"></div>
+                <div v-else-if="screenShots.length == 1">
+                  <img v-bind:src=screenShots[0] style="max-width: 100%">
+                </div>
+                <div v-else>
+                  <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
+                    <el-carousel-item v-for="(path, index) in screenShots" :key="index">
+                      <img v-bind:src=path>
+                    </el-carousel-item>
+                  </el-carousel>
+                </div>
               </div>
 
               <div class="technologies">
