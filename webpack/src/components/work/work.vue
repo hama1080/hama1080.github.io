@@ -12,7 +12,7 @@
               <div class="description">
                 <el-row>
                   <el-col :md="{span: 16, offset: 4}">
-                    {{ description }}
+                    <span v-html="description"></span>
                   </el-col>
                 </el-row>
               </div>
