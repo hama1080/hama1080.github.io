@@ -1,64 +1,26 @@
 <template>
   <div>
-    <el-row>
-      <el-col :span="20" :offset="2">
-
-        <el-card>
-          <el-row>
-            <el-col :span="24">
-              <h2>Bitcoin Price Checker</h2>
-              <h3>2018/3</h3>
-
-              <!-- Description -->
-              <div>
-                Raspberry Pi Zero Wと，7セグLEDを利用し，現在のビットコイン価格を表示する装置．
-                bitflyerのオープンAPIを利用し，取得したビットコイン価格を，ほぼリアルタイムで表示する．
-                小型であるため，部屋のインテリアとしても使える．
-              </div>
-
-              <!-- Screen shots -->
-              <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
-                <el-carousel-item>
-                  <img src="/static/works/bitcoinPriceChecker/appearance.png">
-                </el-carousel-item>
-              </el-carousel>
-
-              <!-- Technologies -->
-              <div>
-                <span class="tech">Technologies:</span>
-                <span class="tech">Python</span>
-                <span class="tech">Raspberry Pi Zero W</span>
-                <span class="tech">Dynamic Lighting System</span>
-              </div>
-
-              <!-- Source link -->
-              <sourceLink address="https://github.com/hama903/PiBitcoinPriceChecker"></sourceLink>
-
-            </el-col>
-          </el-row>
-
-        </el-card>
-
-      </el-col>
-    </el-row>
+    <work
+      title="Bitcoin Price Checker"
+      date="2017/10"
+      description="Raspberry Pi Zero Wと，7セグLEDを利用し，現在のビットコイン価格を表示する装置．bitflyerのオープンAPIを利用し，取得したビットコイン価格を，ほぼリアルタイムで表示する．小型であるため，部屋のインテリアとしても利用可能．"
+      v-bind:screenShots="['/static/works/bitcoinPriceChecker/appearance.png']"
+      v-bind:technologies="['Python', 'Raspberry Pi Zero W', 'Dynamic Lighting System']"
+      sourceAddress="https://github.com/hama903/PiBitcoinPriceChecker"
+    ></work>
   </div>
 </template>
 
 <script>
-import sourceLink from './sourceLink.vue'
+import work from './work.vue'
 
 export default {
-  name: 'portfolio',
+  name: 'hiraganaGAN',
   components: {
-    sourceLink
+    work
   }
 }
 </script>
 
 <style scoped>
-
-.tech{
-  margin: 0 5px;
-}
-
 </style>
