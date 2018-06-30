@@ -25,7 +25,7 @@
                 <div v-else>
                   <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
                     <el-carousel-item v-for="(path, index) in screenShots" :key="index">
-                      <img v-bind:src=path>
+                      <img v-bind:src=path style="max-width: 100%">
                     </el-carousel-item>
                   </el-carousel>
                 </div>
