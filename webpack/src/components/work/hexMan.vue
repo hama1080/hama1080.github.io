@@ -1,60 +1,27 @@
 <template>
   <div>
-    <el-row>
-      <el-col :span="20" :offset="2">
-
-        <el-card>
-          <el-row>
-            <el-col :span="24">
-              <h2>HexMan</h2>
-              <h3>2016/3</h3>
-
-              <!-- Description -->
-              <div>
-                Unreal Engine 4を利用して作成した2人対戦用ゲーム．
-                上下分割画面で，それぞれのキャラクターを操作．
-                ボンバーマンのように爆弾を設置し，相手を倒すことが目的．
-                操作性は非常に悪い．
-              </div>
-
-              <!-- Screen shots -->
-              <el-carousel height="450px" trigger="click" indicator-position="outside" :autoplay=false>
-                <el-carousel-item>
-                  <img src="/static/works/hexMan/playing.png">
-                </el-carousel-item>
-              </el-carousel>
-
-              <!-- Technologies -->
-              <div>
-                <span class="tech">Technologies:</span>
-                <span class="tech">Unreal Engine 4</span>
-              </div>
-
-            </el-col>
-          </el-row>
-
-        </el-card>
-
-      </el-col>
-    </el-row>
+    <work
+      title="HexMan"
+      date="2016/3"
+      description="Unreal Engine 4を利用して作成した2人対戦用ゲーム．上下分割画面で，それぞれのキャラクターを操作．ボンバーマンのように爆弾を設置し，相手を倒すことが目的．操作性は非常に悪い．"
+      v-bind:screenShots="['/static/works/hexMan/playing.png']"
+      v-bind:technologies="['Unreal Engine 4']"
+      sourceAddress=""
+    ></work>
   </div>
 </template>
 
 <script>
-import sourceLink from './sourceLink.vue'
+import work from './work.vue'
 
 export default {
-  name: 'portfolio',
+  name: 'hiraganaGAN',
   components: {
-    sourceLink
+    work
   }
 }
 </script>
 
 <style scoped>
-
-.tech{
-  margin: 0 5px;
-}
 
 </style>
