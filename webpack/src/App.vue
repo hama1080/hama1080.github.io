@@ -1,5 +1,5 @@
 <template>
-  <div id="app" style="max-width: 1024px; margin: 0 auto;">
+  <div id="app">
     <TopBar></TopBar>
     <router-view/>
   </div>
@@ -22,5 +22,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 </style>
