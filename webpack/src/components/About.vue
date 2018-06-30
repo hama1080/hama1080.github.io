@@ -5,6 +5,7 @@
         <el-col :span="24">
           <img src="/static/profile_picture.png"/>
           <h1>@hama903</h1>
+          <h1>Takuto Hamano</h1>
           <h2>Software engineer with the knowledge of hardware.</h2>
         </el-col>
       </el-row>
@@ -24,6 +25,7 @@
           <a href="https://github.com/hama903"><custom-icon name="github" base-class="custom-icon"></custom-icon></a>
           <a href="https://twitter.com/hama903"><custom-icon name="twitter" base-class="custom-icon"></custom-icon></a>
           <a href="https://www.instagram.com/hama903_/"><custom-icon name="instagram" base-class="custom-icon"></custom-icon></a>
+          <a href="https://www.linkedin.com/in/takutohamano/"><custom-icon name="linkedin" base-class="custom-icon"></custom-icon></a>
         </el-col>
       </el-row>
     </div>

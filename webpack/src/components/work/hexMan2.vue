@@ -15,7 +15,7 @@
 import work from './work.vue'
 
 export default {
-  name: 'hiraganaGAN',
+  name: 'hexMan2',
   components: {
     work
   }

@@ -15,7 +15,7 @@
 import work from './work.vue'
 
 export default {
-  name: 'hiraganaGAN',
+  name: 'reversi',
   components: {
     work
   }
