@@ -1,62 +1,27 @@
 <template>
   <div>
-    <el-row>
-      <el-col :span="20" :offset="2">
-
-        <el-card>
-          <el-row>
-            <el-col :span="24">
-              <h2>Hand Made CPU(TD4)</h2>
-              <h3>2012</h3>
-
-              <!-- Description -->
-              <div>
-                "CPUの創り方"に記載の4bit CPUを模倣して作成したCPU．
-                13個のICと，16個のディップスイッチをはんだ付けすることで作成している．
-                ディップスイッチを切り替えることで，自由にプログラムを変更でき，3分のラーメンタイマー等を実行できる．
-              </div>
-
-              <!-- Screen shots -->
-              <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
-                <el-carousel-item>
-                  <img src="/static/works/handMadeCPU/figure0.jpg">
-                </el-carousel-item>
-                <el-carousel-item>
-                  <img src="/static/works/handMadeCPU/figure1.jpg">
-                </el-carousel-item>
-              </el-carousel>
-
-              <!-- Technologies -->
-              <div>
-                <span class="tech">Technologies:</span>
-                <span class="tech">Digital Circuit</span>
-              </div>
-
-            </el-col>
-          </el-row>
-
-        </el-card>
-
-      </el-col>
-    </el-row>
+    <work
+      title="Hand Made CPU(TD4)"
+      date="2012"
+      description="'CPUの創り方'に記載の4bit CPUを模倣して作成したCPU．13個のICと，16個のディップスイッチをはんだ付けすることで作成している．ディップスイッチを切り替えることで，自由にプログラムを変更でき，3分のラーメンタイマー等を実行できる．"
+      v-bind:screenShots="['/static/works/handMadeCPU/figure0.jpg', '/static/works/handMadeCPU/figure1.jpg']"
+      v-bind:technologies="['Digital Circuit']"
+      sourceAddress=""
+    ></work>
   </div>
 </template>
 
 <script>
-import sourceLink from './sourceLink.vue'
+import work from './work.vue'
 
 export default {
-  name: 'portfolio',
+  name: 'hiraganaGAN',
   components: {
-    sourceLink
+    work
   }
 }
 </script>
 
 <style scoped>
-
-.tech{
-  margin: 0 5px;
-}
 
 </style>
