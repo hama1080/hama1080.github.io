@@ -1,63 +1,27 @@
 <template>
   <div>
-    <el-row>
-      <el-col :span="20" :offset="2">
-
-        <el-card>
-          <el-row>
-            <el-col :span="24">
-              <h2>お天気掲示板</h2>
-              <h3>2016/11</h3>
-
-              <!-- Description -->
-              <div>
-                Raspberry Piを用いて，小型液晶に天気予報を表示する装置．
-                天気予報が常に表示されるため，検索やテレビを見るという手間いらずで，日々の天気を確認できる．
-                しかしながら，精度の良い天気予報を取得可能なAPIが見つからず，あまり当てにならない予報となっている．
-              </div>
-
-              <!-- Screen shots -->
-              <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
-                <el-carousel-item>
-                  <img src="/static/works/forecastBoard/figure0.jpg">
-                </el-carousel-item>
-                <el-carousel-item>
-                  <img src="/static/works/forecastBoard/figure1.jpg">
-                </el-carousel-item>
-              </el-carousel>
-
-              <!-- Technologies -->
-              <div>
-                <span class="tech">Technologies:</span>
-                <span class="tech">Python</span>
-                <span class="tech">Raspberry Pi</span>
-              </div>
-
-            </el-col>
-          </el-row>
-
-        </el-card>
-
-      </el-col>
-    </el-row>
+    <work
+      title="お天気掲示板"
+      date="2016/11"
+      description="Raspberry Piを用いて，小型液晶に天気予報を表示する装置．天気予報が常に表示されるため，検索やテレビを見るという手間いらずで，日々の天気を確認できる．しかしながら，精度の良い天気予報を取得可能なAPIが見つからず，あまり当てにならない予報となっている．"
+      v-bind:screenShots="['/static/works/forecastBoard/figure0.jpg', '/static/works/forecastBoard/figure1.jpg']"
+      v-bind:technologies="['Python', 'Raspberry Pi']"
+      sourceAddress=""
+    ></work>
   </div>
 </template>
 
 <script>
-import sourceLink from './sourceLink.vue'
+import work from './work.vue'
 
 export default {
-  name: 'portfolio',
+  name: 'hiraganaGAN',
   components: {
-    sourceLink
+    work
   }
 }
 </script>
 
 <style scoped>
-
-.tech{
-  margin: 0 5px;
-}
 
 </style>
