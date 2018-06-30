@@ -1,68 +1,27 @@
 <template>
   <div>
-    <el-row>
-      <el-col :span="20" :offset="2">
-
-        <el-card>
-          <el-row>
-            <el-col :span="24">
-              <h2>Reversi</h2>
-              <h3>2011</h3>
-
-              <!-- Description -->
-              <div>
-                C言語+GrWinで作成したリバーシ(オセロ)ゲーム．
-                αβアルゴリズムを利用した，簡単なCPUも搭載しており，プレイヤーを満足させる程度の強さである．
-              </div>
-
-              <!-- Screen shots -->
-              <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
-                <el-carousel-item>
-                  <img src="/static/works/reversi/figure0.png">
-                </el-carousel-item>
-                <el-carousel-item>
-                  <img src="/static/works/reversi/figure1.png">
-                </el-carousel-item>
-                <el-carousel-item>
-                  <img src="/static/works/reversi/figure2.png">
-                </el-carousel-item>
-              </el-carousel>
-
-              <!-- Technologies -->
-              <div>
-                <span class="tech">Technologies:</span>
-                <span class="tech">C</span>
-                <span class="tech">GrWin</span>
-              </div>
-
-              <!-- Source link -->
-              <!-- <sourceLink address=""></sourceLink> -->
-
-            </el-col>
-          </el-row>
-
-        </el-card>
-
-      </el-col>
-    </el-row>
+    <work
+      title="リバーシ"
+      date="2011"
+      description="C言語+GrWinで作成したリバーシ(オセロ)ゲーム．αβアルゴリズムを利用した簡単なCPUも搭載している．"
+      v-bind:screenShots="['/static/works/reversi/figure0.png', '/static/works/reversi/figure1.png', '/static/works/reversi/figure2.png']"
+      v-bind:technologies="['C', 'GrWin']"
+      sourceAddress=""
+    ></work>
   </div>
 </template>
 
 <script>
-import sourceLink from './sourceLink.vue'
+import work from './work.vue'
 
 export default {
-  name: 'portfolio',
+  name: 'hiraganaGAN',
   components: {
-    sourceLink
+    work
   }
 }
 </script>
 
 <style scoped>
-
-.tech{
-  margin: 0 5px;
-}
 
 </style>
