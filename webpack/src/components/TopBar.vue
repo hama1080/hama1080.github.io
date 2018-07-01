@@ -14,13 +14,11 @@ export default {
   name: 'TopBar',
   data () {
     return {
-      activeIndex: '1'
+      activeIndex: '/'
     }
   },
-  methods: {
-    handleSelect (key, keyPath) {
-      console.log(key, keyPath)
-    }
+  created: function () {
+    this.activeIndex = this.$route.path
   }
 }
 </script>
