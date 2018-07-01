@@ -12,7 +12,7 @@
 
       <el-row id="skills">
         <el-col :span="24">
-          <span class="skill">Skills:</span>
+          <div class="skill-header">Skills</div>
           <span class="skill">C/C++</span>
           <span class="skill">Python</span>
           <span class="skill">PhysX</span>
@@ -57,6 +57,11 @@ export default {
   margin: 40px 0;
 }
 
+.skill-header{
+  margin: 10px 0;
+  font-size: 120%;
+  font-weight: bold;
+}
 .skill{
   font-size: 120%;
   margin: 0 10px;

@@ -32,7 +32,7 @@
               </div>
 
               <div class="technologies">
-                <span class="tech">Technologies:</span>
+                <div class="tech-header">Technologies</div>
                 <span class="tech" v-for="(technology, index) in technologies" :key="index">
                   {{ technology }}
                 </span>
@@ -101,6 +101,10 @@ export default {
   margin: 30px 0;
 }
 
+.tech-header{
+  margin: 10px 0;
+  font-weight: bold;
+}
 .tech{
   margin: 0 5px;
 }
