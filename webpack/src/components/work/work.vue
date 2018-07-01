@@ -81,6 +81,7 @@ export default {
     }
   },
   created: function () {
+    this.resizeWindow()
     window.addEventListener('resize', this.resizeWindow, false)
   },
   beforeDestroy: function () {
