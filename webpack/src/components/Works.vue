@@ -60,7 +60,7 @@ export default {
         {
           date: '2016/11',
           name: 'お天気掲示板',
-          img_src: '/static/works/forecastBoard/eyecatch.jpg',
+          img_src: '/static/works/forecastBoard/eyecatch.png',
           detail_path: 'work/forecastBoard'
         },
         {
@@ -84,7 +84,7 @@ export default {
         {
           date: '2012',
           name: 'Hand Made CPU(TD4)',
-          img_src: '/static/works/handMadeCPU/eyecatch.jpg',
+          img_src: '/static/works/handMadeCPU/eyecatch.png',
           detail_path: 'work/handMadeCPU'
         },
         {
