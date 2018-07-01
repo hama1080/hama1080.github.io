@@ -23,7 +23,7 @@
                   <img v-bind:src=screenShots[0] style="max-width: 100%">
                 </div>
                 <div v-else>
-                  <el-carousel trigger="click" indicator-position="outside" :autoplay=false>
+                  <el-carousel :height=carouselHeight trigger="click" indicator-position="outside" :autoplay=false>
                     <el-carousel-item v-for="(path, index) in screenShots" :key="index">
                       <img v-bind:src=path style="max-width: 100%">
                     </el-carousel-item>
@@ -65,6 +65,26 @@ export default {
     screenShots: Array,
     technologies: Array,
     sourceAddress: String
+  },
+  data () {
+    return {
+      carouselHeight: '300px'
+    }
+  },
+  methods: {
+    resizeWindow: function () {
+      if (window.innerWidth < 768) {
+        this.carouselHeight = '150px'
+      } else {
+        this.carouselHeight = '300px'
+      }
+    }
+  },
+  created: function () {
+    window.addEventListener('resize', this.resizeWindow, false)
+  },
+  beforeDestroy: function () {
+    window.removeEventListener('resize', this.resizeWindow, false)
   }
 }
 </script>
