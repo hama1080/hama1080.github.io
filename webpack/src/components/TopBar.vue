@@ -28,7 +28,7 @@ div#menu {
   width:270px;
   margin: 0 auto 30px auto;
 }
-.item{
+.el-menu-item.item{
   width: 90px;
   height: 30px;
   line-height: 30px;
