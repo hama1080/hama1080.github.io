@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <transition name="body" appear>
     <el-row>
       <el-col :span="20" :offset="2">
 
@@ -47,7 +47,7 @@
 
       </el-col>
     </el-row>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -105,4 +105,16 @@ export default {
   margin: 0 5px;
 }
 
+/* transition */
+.body-enter-active{
+  transition: opacity 1s;
+}
+
+.body-leave-active{
+  transition: opacity 0s;
+}
+
+.body-enter, .body-leave-to{
+  opacity: 0;
+}
 </style>
