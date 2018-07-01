@@ -46,7 +46,6 @@ module.exports = {
   build: {
     // Template for index.html
     index: path.resolve(__dirname, '../../index.html'),
-    baseUrl: "./",
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../../'),
