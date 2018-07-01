@@ -1,6 +1,6 @@
 <template>
   <div id="menu">
-    <el-menu :default-active="activeIndex" mode="horizontal" class="top-bar" router="true" @select="handleSelect"
+    <el-menu :default-active="activeIndex" mode="horizontal" class="top-bar" :router=true
              background-color="#f5f2ed" text-color="#333" active-text-color="#ff6347">
       <el-menu-item index="/">About</el-menu-item>
       <el-menu-item index="/Works">Works</el-menu-item>

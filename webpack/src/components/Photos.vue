@@ -5,7 +5,7 @@
         <el-col :span="24">
           <el-card class="photo-card">
             <img src="/static/photos/poonhill.jpg" class="photo">
-            <dev class="photo-detail">Poon Hill, Nepal</dev>
+            <div class="photo-detail">Poon Hill, Nepal</div>
           </el-card>
         </el-col>
       </el-row>
@@ -27,7 +27,7 @@
         <el-col :span="24">
           <el-card class="photo-card">
             <img src="/static/photos/hokuryu.jpg" class="photo">
-            <dev class="photo-detail">Hokuryu, Hokkaido, Japan</dev>
+            <div class="photo-detail">Hokuryu, Hokkaido, Japan</div>
           </el-card>
         </el-col>
       </el-row>
@@ -36,7 +36,7 @@
         <el-col :span="24">
           <el-card class="photo-card">
             <img src="/static/photos/biei.jpg" class="photo">
-            <dev class="photo-detail">Biei, Hokkaido, Japan</dev>
+            <div class="photo-detail">Biei, Hokkaido, Japan</div>
           </el-card>
         </el-col>
       </el-row>
@@ -45,7 +45,7 @@
         <el-col :span="24">
           <el-card class="photo-card">
             <img src="/static/photos/abashiri.jpg" class="photo">
-            <dev class="photo-detail">Abashiri, Hokkaido, Japan</dev>
+            <div class="photo-detail">Abashiri, Hokkaido, Japan</div>
           </el-card>
         </el-col>
       </el-row>
@@ -54,7 +54,7 @@
         <el-col :span="24">
           <el-card class="photo-card">
             <img src="/static/photos/varanasi.jpg" class="photo">
-            <dev class="photo-detail">Varanasi, India</dev>
+            <div class="photo-detail">Varanasi, India</div>
           </el-card>
         </el-col>
       </el-row>
