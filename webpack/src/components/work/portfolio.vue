@@ -6,7 +6,7 @@
       description="Vue.jsを利用したポートフォリオサイト．UIライブラリとしてElement UIを利用．これまでに作ったものや，撮影した写真を掲載．"
       v-bind:screenShots="['/static/works/portfolio/figure0.png']"
       v-bind:technologies="['HTML/CSS', 'Vue.js', 'Element UI']"
-      sourceAddress="https://github.com/hama903/hama903.github.io"
+      sourceAddress="https://github.com/hama1080/hama1080.github.io"
     ></work>
   </div>
 </template>
